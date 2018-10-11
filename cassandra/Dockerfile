@@ -8,4 +8,5 @@ COPY start_cassandra.sh /usr/bin/start_cassandra.sh
 COPY cassandra.supervisord.conf /etc/supervisor/conf.d/cassandra.conf
 COPY clearwater-group.supervisord.conf /etc/supervisor/conf.d/clearwater-group.conf
 
+RUN usr/share/clearwater/crest-prov/src/metaswitch/crest/tools/stress_provision.sh 30000
 EXPOSE 9160 7001 7001 9042

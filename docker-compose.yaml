@@ -81,3 +81,9 @@ services:
     ports:
       - 22
       - "80:80"
+  stress-node:
+    image: clearwater-stress-node
+    environment:
+      - ADDITIONAL_SHARED_CONFIG
+    ports:
+      - "5082:5082"
