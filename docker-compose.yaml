@@ -82,7 +82,7 @@ services:
       - 22
       - "80:80"
   stress-node:
-    image: clearwater-stress-node
+    build: stress-node
     environment:
       - ADDITIONAL_SHARED_CONFIG
     ports:
