@@ -5,7 +5,7 @@
 
 2) `cd clearwater-docker`
 
-3) sudo docker build -t clearwater/base base
+3) `sudo docker build -t clearwater/base base`
 
 4) add your global ip in .env file
 
